@@ -200,7 +200,6 @@ if idleling == 1
 if place_meeting(x,y,obj_encounter_zone1)  && enter_combat_timer_active = false
 {
 	step_to_encouter_zone_1 = irandom_range(100, 150);
-	show_debug_message("random number is " + string(step_to_encouter_zone_1))
 	enter_combat_timer_active = true; 
 	encouter_zone_step_1 = 0;
 }	 
@@ -209,7 +208,7 @@ if place_meeting(x,y,obj_encounter_zone1)  && enter_combat_timer_active = false
 if place_meeting(x,y,obj_encounter_zone1) &&  enter_combat_timer_active = true && ( xspd != 0  || yspd != 0 )
 {
 	encouter_zone_step_1 ++ ;
-	show_debug_message("steping is " + string(encouter_zone_step_1))
+	
 }	
 	
 if place_meeting(x,y,obj_encounter_zone1) && encouter_zone_step_1 >= step_to_encouter_zone_1 && enter_combat_timer_active = true 

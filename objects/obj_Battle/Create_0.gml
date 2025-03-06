@@ -5,6 +5,8 @@ turn = 0;
 unitTurnOrder = [];
 unitRenderOrder = [];
 
+enemy_portraits = [];
+player_portraits = [];
 
 turnCount = 0;
 roundCount = 0;
